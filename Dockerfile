@@ -11,7 +11,7 @@ COPY manage.py /opt/app/vuln_django/
 RUN pip install -r /opt/app/requirements.txt
 
 
-# Create a "micro" stage to run as a gunicorn container
+# Create a "micro" stage to run as a gunicorn container XX
 FROM base as micro
 ARG SERVER_PORT=8010
 ENV SERVER_PORT=${SERVER_PORT}
