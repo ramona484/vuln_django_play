@@ -23,7 +23,7 @@ WORKDIR /opt/app/vuln_django
 CMD exec gunicorn vuln_django.wsgi --bind 0.0.0.0:${SERVER_PORT} --workers 3
 
 
-# Create a "dev" stage as the default final build target.
+# Create a "development" stage as the default final build target.
 #  - Includes sqlite and nginx
 #  - Runs data migrations and seeds poll data
 FROM base as dev
